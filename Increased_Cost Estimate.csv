@@ -1,0 +1,21 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (Ohio),EC2 Servers for the Web Servers,Amazon EC2,0,2295.84,27550.08,USD,"Operating system (Linux), Quantity (10), Pricing strategy (On-Demand Instances), Storage amount (100 GB), Instance type (t3a.2xlarge)"
+My Estimate,US East (Ohio),EC2 instances for the application servers,Amazon EC2,0,2295.84,27550.08,USD,"Operating system (Linux), Quantity (10), Pricing strategy (On-Demand Instances), Storage amount (100 GB), Instance type (t3a.2xlarge)"
+My Estimate,US East (Ohio),,Amazon RDS for PostgreSQL,0,5900.62,70807.44,USD,"Storage volume (Provisioned IOPS SSD (io1)), Provisioning IOPS (4000), Storage amount (50 GB per month), Nodes (2), Instance Type (db.m4.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (OnDemand), Additional backup storage (100 GB)"
+My Estimate,US East (Ohio),Web Cache for the ALB and S3 across the globe,Amazon CloudFront,0,69.55,834.6,USD,"Data transfer out to internet (40 GB per month), Data transfer out to origin (40 GB per month), Number of requests (HTTPS) (100000 per month), Data transfer out to internet (40 GB per month), Data transfer out to origin (40 GB per month), Number of requests (HTTPS) (100000 per month), Data transfer out to internet (40 GB per month), Data transfer out to origin (40 GB per month), Number of requests (HTTPS) (100000 per month), Data transfer out to internet (40 GB per month), Data transfer out to origin (40 GB per month), Number of requests (HTTPS) (100000 per month), Data transfer out to internet (40 GB per month), Data transfer out to origin (40 GB per month), Number of requests (HTTPS) (100000 per month), Data transfer out to internet (040 GB per month), Data transfer out to origin (40 GB per month), Number of requests (HTTPS) (100000 per month), Data transfer out to internet (40 GB per month), Data transfer out to origin (40 GB per month), Number of requests (HTTPS) (100000 per month), Data transfer out to internet (40 GB per month), Data transfer out to origin (40 GB per month), Number of requests (HTTPS) (100000 per month), Data transfer out to internet (40 GB per month), Data transfer out to origin (40 GB per month), Number of requests (HTTPS) (100000 per month), Data transfer out to internet (40 GB per month), Data transfer out to origin (40 GB per month), Number of requests (HTTPS) (100000 per month)"
+My Estimate,US East (Ohio),,Amazon Route 53,0,1264.7,15176.4,USD,"Hosted Zones (1), Basic Checks Within AWS (100), Number of Elastic Network Interfaces (10)"
+My Estimate,US East (Ohio),,S3 Standard,0,46,552,USD,S3 Standard storage (2000 GB per month)
+My Estimate,US East (Ohio),,Data Transfer,0,0,0,USD,
+My Estimate,US East (Ohio),,Amazon Virtual Private Cloud (VPC),0,2315.7,27788.4,USD,Number of NAT Gateways (2)
+My Estimate,US East (Ohio),ALB for the web servers,Application Load Balancer,0,2118.83,25425.96,USD,Number of Application Load Balancers (1)
+My Estimate,US East (Ohio),ALB for the application servers,Application Load Balancer,0,2118.83,25425.96,USD,Number of Application Load Balancers (1)
+,,,,,,,,
+,,,,,,,,
+,,,,Total Monthly,18425.91,,,
+,,,,,,,,
+,,,,,,,,
+,,,,What changes I made,,,,
+,,,,EC2- increased number of instances from total 6 to 10 for the Web Servers and the Application Servers and changed the type to 2xlarge for better performance,,,,
+,,,,RDS ricing strategy changed the type to 2xlarge and pricing plan to on-demand,,,,
+,,,,Route 53 changed number of Elastic Network Instances from 10 to 20,,,,
+,,,,"For ALB, increased the number of new connections (EC2-IP) for both application and web servers load balancers",,,,
